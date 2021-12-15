@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hyg.pojo.Adminer" table="adminer">
+		<!-- 主键 -->
+		<id name="id" type="java.lang.Integer" column="id">
+				<!-- 主键生成器 -->
+				<generator class="sequence">
+					<param name="sequence">ADMINER_SEQ</param>
+				</generator>
+		</id>
+		<property name="username"  type="java.lang.String" column="username"/>
+		<property name="password"  type="java.lang.String" column="password"/>
+	</class>
+</hibernate-mapping>

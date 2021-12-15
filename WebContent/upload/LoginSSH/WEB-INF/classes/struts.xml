@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- struts全局属性的配置 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
+
+    <package name="default" namespace="/" extends="struts-default">
+    <!-- class对应依赖注入userAction中的bean的id -->
+		<action name="user" class="userAction">
+			<result name="loginOk">/success.jsp</result>
+			<result name="showuser">/list.jsp</result>
+			<result name="wrong">/wrong.jsp</result>
+			<result name="found">/edit.jsp</result>
+			<result name="insert">/add.jsp</result>
+			<result name="text">/text.jsp</result>
+		</action>
+    </package>
+
+</struts>

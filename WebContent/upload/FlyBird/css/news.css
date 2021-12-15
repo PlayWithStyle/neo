@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+.head{
+	height:100px;
+	background-image:url(../style/luntan.png);
+	background-size:100% 100%;}
+.neck{
+	height:50px;
+	width:1366px;
+	}
+#one{
+	width:455px;
+	float:left;
+	text-align:center;
+	background-color:#FFC;
+	cursor:pointer;
+}
+	
+#two{
+	 width:455px;
+	 float:left;
+	 text-align:center;
+	 background-color:#FFC;
+	 cursor:pointer;
+}
+	 
+#three{
+	 width:456px; 
+	 float:left;  
+	 text-align:center;
+	 background-color:#FFC;
+	 cursor:pointer;
+	 }
+	 
+#reone{
+	background-color:#6FF;
+	border:#6FF 3px solid;
+	width:455px;
+	float:left;
+	text-align:center;
+	position:fixed;
+	z-index:993;
+	display:none;
+	}
+	
+#retwo{
+	margin-left:455px;
+	background-color:#6FF;
+	border:#6FF 3px solid;
+	 width:455px;
+	 float:left;
+	 text-align:center;
+	 position:fixed;
+	 z-index:992;
+}
+	 
+#rethree{
+	margin-left:910px;
+	 background-color:#6FF;
+	 border:#6FF 3px solid;
+	 width:456px; 
+	 float:left; 
+	 text-align:center;
+	 position:fixed;
+	 z-index:991;
+	 display:none;}
+	 
+.middle1{
+	height:480px;
+	background-color:#6FF;
+	display:none;
+}
+.middle2{
+	width:1366px;
+	background-color:#6FF;
+	background-size:100% 100%;
+	position:fixed;
+	z-index:999px;	
+}
+.middle3{
+	height:480px;
+	width:1366px;
+	background-color:#6FF;
+	position:fixed;
+	z-index:998px;
+	display:none;
+}
+.comlist{
+	width:1366px;
+	height:480px;
+	float:left;
+	}
+.mycom{
+	width:350px;
+	height:250px;
+	margin-top:200px;
+	margin-left:100px;
+	float:left;}
+a{
+	text-decoration:none;}
+

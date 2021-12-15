@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.head{
+	margin-left: 600px;
+	margin-top: 100px;
+}
+#sky{
+    z-index: 1;
+    width: 400px;
+    height: 150px;
+   /*  background-color:orange; */
+    /* background-image:url("/style/1.jpg"); */
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    display:none; 
+    border:1px solid #ccc;
+    box-shadow: 5px 5px 20px #333;
+}
+.divone{
+	height: 20px;
+	background-color: blue;
+}
+.divtwo{
+	margin-left: 130px;
+	margin-top: 20px;
+}
+.sky2{
+	z-index: 2;
+    width: 550px;
+    height: 150px;
+    position: fixed;
+    top: 220px;
+    left: 500px;
+    display:none;
+    border:1px solid #ccc;
+    box-shadow: 5px 5px 20px #333;
+    
+}

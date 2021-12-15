@@ -1,0 +1,216 @@
+.ss{
+	height:30px;
+	background-color:#EFEFEF;
+	}
+.aa{
+	margin-left:1100px;
+	}
+.top{
+	margin-left:30px;
+	height:80px;
+	border-bottom:1px solid #666;
+	}
+	
+.div_display{
+	display:none;
+}
+	
+	
+	
+	
+.middle{
+	width:1200px;
+	height:400px;
+	margin:0;
+	}
+.top1{
+	float:left;
+	margin-left:120px;
+	}
+.top2{
+	float:left;
+	margin:20px 80px;
+	}
+.top3{
+	float:left;
+	margin:30px 60px;
+	}
+.top3 input[type="text"]{
+	float:left;
+	border:1px solid #ddd;
+	width:300px;
+	height:30px;
+	}
+.top3 input[type="submit"]{
+	float:left;
+	border:1px solid #ddd;
+	width:80px;
+	height:30px;
+	background-color:#09F;
+	color:white;
+	}
+.middle1{
+	float:left;
+	width:250px;
+	height:400px;
+	border-bottom:1px solid #333;
+	}
+.div_two_catalog{
+	background-color:#ffffff;
+	float:left;
+	width:600px;
+	height:400px;
+	border:1px solid #666;
+	position:absolute;
+	z-index:999;
+	margin:10px 250px;
+	}
+.div_two_catalog .div_two_catalog-1{
+	float:left;
+	margin:20px 20px;
+	width:80px;
+	height:110px;
+	text-align:center;
+	}
+.div_two_catalog-1 .div_two_catalog-0{
+	width:80px;
+	height:80px;
+	background-image:url(../image/208.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-3{
+	width:80px;
+	height:80px;
+	background-image:url(../image/209.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-4{
+	width:80px;
+	height:80px;
+	background-image:url(../image/210.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-5{
+	width:80px;
+	height:80px;
+	background-image:url(../image/211.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-6{
+	width:80px;
+	height:80px;
+	background-image:url(../image/212.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-21{
+	width:80px;
+	height:80px;
+	background-image:url(../image/219.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-22{
+	width:80px;
+	height:80px;
+	background-image:url(../image/220.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-23{
+	width:80px;
+	height:80px;
+	background-image:url(../image/227.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-24{
+	width:80px;
+	height:80px;
+	background-image:url(../image/222.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-25{
+	width:80px;
+	height:80px;
+	background-image:url(../image/223.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-26{
+	width:80px;
+	height:80px;
+	background-image:url(../image/226.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-31{
+	width:80px;
+	height:80px;
+	background-image:url(../image/231.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-32{
+	width:80px;
+	height:80px;
+	background-image:url(../image/232.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-33{
+	width:80px;
+	height:80px;
+	background-image:url(../image/235.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-41{
+	width:80px;
+	height:80px;
+	background-image:url(../image/236.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-42{
+	width:80px;
+	height:80px;
+	background-image:url(../image/237.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-43{
+	width:80px;
+	height:80px;
+	background-image:url(../image/238.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-51{
+	width:80px;
+	height:80px;
+	background-image:url(../image/240.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-52{
+	width:80px;
+	height:80px;
+	background-image:url(../image/242.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-53{
+	width:80px;
+	height:80px;
+	background-image:url(../image/245.jpg);
+	}
+.div_two_catalog-1 .div_two_catalog-54{
+	width:80px;
+	height:80px;
+	background-image:url(../image/248.jpg);
+	}
+.div_two_catalog-2{
+	width:80px;
+	height:80px;
+	background-image:url(../image/192.jpg);
+	}
+.middle1 .middle1-top{
+	background-color:#F90;
+	height:45px;
+	}
+.middle1 .middle1-1{
+	height:70px;
+	border:1px solid #666;
+	background-color:#3C6;
+	}
+.middle2{
+	margin-left:15px;
+	float:left;
+	width:600px;
+	height:400px;
+
+	}
+.middle3{
+	margin-left:15px;
+	float:left;
+	width:310px;
+	height:400px;
+	border:1px solid #333;
+	}
+.mid1{
+	border:1px solid #666;
+	height:150px;
+	text-align:center;
+	background-image:url(../image/u=4271053251,2424464488&fm=23&gp=0.jpg);
+	}
+.mid2{
+	margin:20px;
+}

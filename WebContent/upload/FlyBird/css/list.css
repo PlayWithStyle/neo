@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.head{
+	border:#03C solid 2px;
+	height:100px;
+	width:1366px;}
+.logo{
+	height:100px;
+	width:150px;
+	margin-left:50px;
+	float:left;}
+.middle1{
+	margin-left:100px;	
+	width:1155px;
+	height:400px;
+	border:red solid 1px;
+	margin-top:30px;}
+.middle2{
+	margin-top:330px;
+	margin-left:100px;	
+	width:1200px;
+	height:300px;
+	border:#000 solid 2px;}
+
+	.img1{
+width:150px;
+height:400px;
+background-image:url(../style/love2.jpg);
+/* transition:width 2s; */
+/* -moz-transition:width 2s;  */
+/* 这是控制来回缩放的速度 */
+-webkit-transition:width 1s; 
+ /* -o-transition:width 2s; */
+ float: left;
+  margin-left: 0px;
+		}  
+		.img1:hover{
+width:400px;
+} 
+
+	.foot{
+		background-image:url(../style/feng.gif);
+		background-size:100% 50%;
+		height:400px;
+		width:250px;
+		margin-left:900px;}
+	.pageno{
+	 width:400px;
+	 height:50px;
+	 margin-left: 900px;
+	 margin-top:5px;}

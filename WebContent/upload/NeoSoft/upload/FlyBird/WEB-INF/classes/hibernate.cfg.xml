@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+	<!-- 数据库方言 -->
+	<property name="dialect">
+		org.hibernate.dialect.OracleDialect
+	</property>
+	<!-- 数据库url信息 -->
+	<property name="connection.url">
+		jdbc:oracle:thin:@localhost:1521:orcl 	
+	</property>
+	<!-- 数据库驱动信息 -->
+	<property name="connection.driver_class">
+		oracle.jdbc.driver.OracleDriver
+	</property>
+	<!-- 数据库用户名和密码 -->
+	<property name="connection.username">qinfg</property>
+	<property name="connection.password">521521</property>
+	<!-- 在控制台显示sql语句 -->
+	<property name="show_sql">true</property>
+	<!-- 自动生成数据库表 -->
+	<property name="hbm2ddl.auto">update</property>
+	<!-- 注册映射文件 指定hibernate映射文件路径-->
+	<mapping resource="com/hyg/pojo/User.hbm.xml"/>
+	<mapping resource="com/hyg/pojo/Focus.hbm.xml"/>
+	<mapping resource="com/hyg/pojo/Adminer.hbm.xml"/>
+	<mapping resource="com/hyg/pojo/Admire.hbm.xml"/>
+	<mapping resource="com/hyg/pojo/Invite.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

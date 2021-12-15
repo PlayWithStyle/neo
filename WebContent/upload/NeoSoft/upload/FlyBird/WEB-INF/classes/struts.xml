@@ -1,0 +1,42 @@
+
+ <!-- <?xml version="1.0" encoding="UTF-8"　?> -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- struts全局属性的配置 -->
+    <!-- 让struts2支持动态方法调用 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <!-- 启用开发者模式 -->
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
+    <package name="default" namespace="/" extends="struts-default">
+    <!-- class对应依赖注入userAction中的bean的id -->
+		<action name="user" class="userAction">
+			<result name="loginok">success.jsp</result>
+			<result name="loginok2">success.jsp</result>
+			<result name="upgrade">upgrade.jsp</result>
+			<result name="start">reset.jsp</result>
+			<result name="wrong">wrong.jsp</result>
+			<result name="love">love.jsp</result>
+			<result name="showuser">list.jsp</result>
+			<result name="adminshowuser">customer.jsp</result>
+			<result name="adduser">login.jsp</result>
+			<result name="select">select.jsp</result>
+			<result name="showid">showid.jsp</result>
+			<result name="adminer">adminer.jsp</result>
+			<result name="screct">screct.jsp</result>
+			<result name="news">news.jsp</result>
+			<result name="myfocus">myfocus.jsp</result>
+			<result name="myfans">myfans.jsp</result>
+			<result name="managenews">managenews.jsp</result>
+			<result name="manageadmire">admire.jsp</result>
+			<result name="manageinvite">invite.jsp</result>
+			<result name="managefocus">focus.jsp</result>
+			<result name="selectperson">selectperson.jsp</result>
+			<result name="searchid">searchid.jsp</result>
+		</action>
+    </package>
+
+</struts>

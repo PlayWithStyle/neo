@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="neosoft.jp.pojo.User" table="user">
+		<!-- 主键 -->
+		<id name="userid" type="java.lang.Integer" column="userid">
+				<!-- 主键生成器
+				<generator class="sequence">
+					<param name="sequence">CUSTOMER_SEQ</param>
+				</generator>  -->
+		</id>
+		<property name="username"  type="java.lang.String" column="username"/>
+		<property name="password"  type="java.lang.String" column="password"/>
+		<property name="privilege"  type="java.lang.String" column="privilege"/>
+	</class>
+</hibernate-mapping>

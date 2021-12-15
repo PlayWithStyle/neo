@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+	<!-- 方言 -->
+	<property name="dialect">
+		org.hibernate.dialect.OracleDialect
+	</property>
+	<property name="connection.driver_class">
+		oracle.jdbc.driver.OracleDriver
+	</property>
+	<property name="connection.url">
+		jdbc:oracle:thin:@localhost:1521:orcl
+	</property>
+	<property name="connection.username">scott</property>
+	<property name="connection.password">123456</property>
+	<!-- 在控制台显示sql语句 -->
+	<property name="show_sql">true</property>
+	<!-- 自动生成数据库表 -->
+	<property name="hbm2ddl.auto">update</property>
+	<!-- 注册映射文件 -->
+	<mapping resource="com/hyg/pojo/User.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

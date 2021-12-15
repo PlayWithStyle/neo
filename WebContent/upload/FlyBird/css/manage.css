@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+.head{
+	width:auto;
+	height:130px;
+	background-image:url(../style/qin.jpg);
+	background-size:100% 100%;
+	padding-left:500px;
+	padding-top:50px;}
+.left{
+	height:500px;
+	width:200px;
+	border:#000 solid 1px;
+	background-color:#CCC;
+	float:left;}
+.middle{
+	height:500px;
+	width:10px;
+	background-color:#009;
+	float:left;}
+.right{
+	height:500px;
+	width:1155px;
+	background-size:100% 100%;
+	margin-left:210px;}
+
+

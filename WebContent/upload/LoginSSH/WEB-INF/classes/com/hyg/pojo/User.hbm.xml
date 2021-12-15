@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hyg.pojo.User" table="tb_user">
+		<!-- 主键 -->
+		<id name="userid" column="userid" type="java.lang.Integer">
+				<!-- 主键生成器 -->
+				<generator class="sequence">
+					<param name="sequence">SEQ_USERINFO_ID</param>
+				</generator>
+		</id>
+		<property name="username" type="java.lang.String" column="username"/>
+		<property name="password" type="java.lang.String" column="password"/>
+		<property name="gender" type="java.lang.String" column="gender"/>
+		<property name="education" type="java.lang.String" column="education"/>
+		<property name="address" type="java.lang.String" column="address"/>
+		<property name="mobile" type="java.lang.String" column="mobile"/>
+	</class>
+</hibernate-mapping>

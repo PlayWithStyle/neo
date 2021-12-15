@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	     http://www.springframework.org/schema/beans 
+	     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	     http://www.springframework.org/schema/tx
+	     http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+	     http://www.springframework.org/schema/aop 
+	     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	<!-- 配置数据源 -->
+<!-- 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		驱动配置
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		url配置
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+		用户名配置
+		<property name="username" value="scott" />
+		密码配置
+		<property name="password" value="orcl" />
+		初始化大小配置
+		<property name="initialSize" value="5" />
+		最大连接数配置
+		<property name="maxActive" value="100" />
+		最大空闲时间配置
+		<property name="maxIdle" value="30" />
+		最长等待时间配置
+		<property name="maxWait" value="1000" />
+	</bean>
+	配置SessionFactory
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				hibernate方言
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle10gDialect
+				</prop>
+				是否在控制台下打印Sql，开发模式时为true，生产环境下为false
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		映射文件
+		<property name="mappingLocations">
+			<value>classpath:com/dh/pojo/*.hbm.xml</value>
+		</property>
+	</bean> -->
+<!-- 	配置sessionfactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
+	</bean>
+	
+	    <!-- 事务管理 -->
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <!-- 定义事务通知 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+        	<!-- 对于查找方法进行只读事务通知并要求查找方法以find开头 -->
+            <tx:method name="find*" read-only="true" propagation="SUPPORTS" />
+           <!--  对于其他方法如增加 删除 修改操作进行事务支持 -->
+            <tx:method name="*" propagation="REQUIRED" />
+        </tx:attributes>
+    </tx:advice>
+   	 <!-- 切面定义 -->
+    <aop:config>
+        <!-- 对com.yg.service包及其子包中的任意方法进行切面 -->
+        <aop:pointcut id="bizMethods" expression="execution (* service.*.*(..))" />
+        <aop:advisor pointcut-ref="bizMethods" advice-ref="txAdvice" />
+    </aop:config>
+    
+	
+
+	<bean id="loginDao" class="com.hyg.dao.LoginDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="userService" class="com.hyg.service.UserService">
+		<property name="ld">
+			<ref bean="loginDao"/>
+		</property>
+	</bean>
+		<bean id="userAction" class="com.hyg.action.userAction">
+		<property name="service">
+			<ref bean="userService"/>
+		</property>
+	</bean>
+</beans>

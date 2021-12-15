@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hyg.pojo.Invite" table="invite">
+		<!-- 主键 -->
+		<id name="id" type="java.lang.Integer" column="id">
+				<!-- 主键生成器 -->
+				<generator class="sequence">
+					<param name="sequence">INVITE_SEQ</param>
+				</generator>
+		</id>
+		<property name="invited"  type="java.lang.Integer" column="invited"/>
+		<property name="inviting"  type="java.lang.Integer" column="inviting"/>
+		<property name="flag"     type="java.lang.Integer" column="flag"/>
+	</class>
+</hibernate-mapping>
